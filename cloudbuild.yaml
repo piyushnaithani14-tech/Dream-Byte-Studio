@@ -1,0 +1,45 @@
+steps:
+  # 1. Build container image via Cloud Build
+  - name: 'gcr.io/cloud-builders/docker'
+    args:
+      - 'build'
+      - '-t'
+      - 'asia-south2-docker.pkg.dev/$PROJECT_ID/dreambyte-repo/dreambyte-studio:$COMMIT_SHA'
+      - '-t'
+      - 'asia-south2-docker.pkg.dev/$PROJECT_ID/dreambyte-repo/dreambyte-studio:latest'
+      - '.'
+
+  # 2. Push image to Google Artifact Registry
+  - name: 'gcr.io/cloud-builders/docker'
+    args:
+      - 'push'
+      - 'asia-south2-docker.pkg.dev/$PROJECT_ID/dreambyte-repo/dreambyte-studio:$COMMIT_SHA'
+
+  # 3. Deploy to Google Cloud Run (Asia South 2 - Delhi, closest to Dehradun)
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    entrypoint: gcloud
+    args:
+      - 'run'
+      - 'deploy'
+      - 'dreambyte-studio'
+      - '--image'
+      - 'asia-south2-docker.pkg.dev/$PROJECT_ID/dreambyte-repo/dreambyte-studio:$COMMIT_SHA'
+      - '--region'
+      - 'asia-south2'
+      - '--platform'
+      - 'managed'
+      - '--allow-unauthenticated'
+      - '--memory'
+      - '1Gi'
+      - '--cpu'
+      - '1'
+      - '--min-instances'
+      - '0'
+      - '--max-instances'
+      - '10'
+
+images:
+  - 'asia-south2-docker.pkg.dev/$PROJECT_ID/dreambyte-repo/dreambyte-studio:$COMMIT_SHA'
+  - 'asia-south2-docker.pkg.dev/$PROJECT_ID/dreambyte-repo/dreambyte-studio:latest'
+options:
+  logging: CLOUD_LOGGING_ONLY
