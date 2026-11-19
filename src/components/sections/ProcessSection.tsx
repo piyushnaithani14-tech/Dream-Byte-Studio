@@ -85,13 +85,13 @@ export const ProcessSection: React.FC = () => {
                 </h3>
 
                 {/* Description */}
-                <p className="text-base text-neutral-300 leading-relaxed font-normal">
+                <p className="text-xs sm:text-sm text-neutral-300 leading-relaxed font-normal">
                   {step.description}
                 </p>
               </div>
 
               {/* Bottom Tag */}
-              <div className="mt-6 pt-4 border-t border-white/[0.06] flex items-center justify-between text-sm font-mono text-neutral-500">
+              <div className="mt-6 pt-4 border-t border-white/[0.06] flex items-center justify-between text-[11px] font-mono text-neutral-500">
                 <span>PHASE 0{idx + 1}</span>
                 <span className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: activeTheme.color }} />
               </div>

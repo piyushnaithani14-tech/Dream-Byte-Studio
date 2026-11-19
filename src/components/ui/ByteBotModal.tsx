@@ -182,7 +182,7 @@ export const ByteBotModal: React.FC = () => {
                     <h3 className="font-heading font-bold text-white text-sm sm:text-base">
                       Studio Concierge
                     </h3>
-                    <span className="font-mono text-sm text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/20">
+                    <span className="font-mono text-[10px] text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/20">
                       Live Desk
                     </span>
                   </div>
@@ -217,7 +217,7 @@ export const ByteBotModal: React.FC = () => {
               {messages.map((m) => (
                 <div key={m.id} className={`flex flex-col ${m.sender === "user" ? "items-end" : "items-start"}`}>
                   <div
-                    className={`max-w-[85%] sm:max-w-[80%] p-4 rounded-xl text-base leading-relaxed ${
+                    className={`max-w-[85%] sm:max-w-[80%] p-4 rounded-xl text-sm leading-relaxed ${
                       m.sender === "user"
                         ? "bg-white text-black font-medium"
                         : "bg-[#151722] text-neutral-200 border border-white/10"
@@ -254,7 +254,7 @@ export const ByteBotModal: React.FC = () => {
                       </div>
                     )}
                   </div>
-                  <span className="text-sm font-mono text-neutral-500 mt-1 px-1">{m.timestamp}</span>
+                  <span className="text-[10px] font-mono text-neutral-500 mt-1 px-1">{m.timestamp}</span>
                 </div>
               ))}
               <div ref={messagesEndRef} />

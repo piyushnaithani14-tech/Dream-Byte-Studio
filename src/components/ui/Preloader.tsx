@@ -153,7 +153,7 @@ export const Preloader: React.FC<PreloaderProps> = ({ onComplete }) => {
             </div>
 
             {/* Exposure Index and Percentage */}
-            <div className="w-full flex items-center justify-between mt-3 text-sm font-mono text-[#8F94A0]">
+            <div className="w-full flex items-center justify-between mt-3 text-[11px] font-mono text-[#8F94A0]">
               <span>SHUTTER 1/250s</span>
               <span className="text-white font-bold text-sm tracking-normal">
                 {progress}
@@ -164,7 +164,7 @@ export const Preloader: React.FC<PreloaderProps> = ({ onComplete }) => {
           </div>
 
           {/* Bottom studio branding stamp */}
-          <div className="absolute bottom-8 text-sm font-mono tracking-widest text-white/30 uppercase">
+          <div className="absolute bottom-8 text-[11px] font-mono tracking-widest text-white/30 uppercase">
             Dehradun • Uttarakhand
           </div>
         </motion.div>

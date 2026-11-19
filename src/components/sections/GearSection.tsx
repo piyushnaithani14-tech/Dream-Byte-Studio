@@ -84,7 +84,7 @@ export const GearSection: React.FC = () => {
                   {/* Card Header with Icon */}
                   <div className="flex items-center justify-between mb-4">
                     <span
-                      className="font-mono text-sm uppercase tracking-wider px-2.5 py-1 rounded border font-medium"
+                      className="font-mono text-[10px] uppercase tracking-wider px-2.5 py-1 rounded border font-medium"
                       style={{
                         color: activeTheme.color,
                         borderColor: `${activeTheme.color}35`,
@@ -99,20 +99,20 @@ export const GearSection: React.FC = () => {
                   </div>
 
                   {/* Title & Subtitle */}
-                  <h3 className="font-heading text-xl sm:text-2xl font-bold text-white mb-1 tracking-tight">
+                  <h3 className="font-heading text-lg sm:text-xl font-bold text-white mb-1 tracking-tight">
                     {item.title}
                   </h3>
-                  <div className="text-sm font-mono text-neutral-400 mb-3">{item.subtitle}</div>
-                  <p className="text-base text-neutral-300 leading-relaxed font-normal mb-5">
+                  <div className="text-xs font-mono text-neutral-400 mb-3">{item.subtitle}</div>
+                  <p className="text-xs sm:text-sm text-neutral-300 leading-relaxed font-normal mb-5">
                     {item.description}
                   </p>
                 </div>
 
                 {/* Specs List */}
-                <div className="pt-4 border-t border-white/[0.06] space-y-2.5">
+                <div className="pt-4 border-t border-white/[0.06] space-y-2">
                   {item.specs.map((spec, sIdx) => (
-                    <div key={sIdx} className="flex items-center gap-2.5 text-base text-neutral-300 font-normal">
-                      <CheckCircle2 className="w-4 h-4 flex-shrink-0" style={{ color: activeTheme.color }} />
+                    <div key={sIdx} className="flex items-center gap-2 text-xs text-neutral-400 font-normal">
+                      <CheckCircle2 className="w-3.5 h-3.5 flex-shrink-0" style={{ color: activeTheme.color }} />
                       <span>{spec}</span>
                     </div>
                   ))}

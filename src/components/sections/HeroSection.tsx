@@ -71,16 +71,16 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onBookClick }) => {
                 />
                 <span className="relative inline-flex rounded-full h-2 w-2" style={{ backgroundColor: activeTheme.color }} />
               </span>
-              <span className="font-mono text-sm tracking-wider font-semibold text-white">
+              <span className="font-mono text-[11px] tracking-wider font-semibold text-white">
                 REC [4K 60FPS]
               </span>
-              <span className="hidden sm:inline-block font-mono text-sm tracking-wider text-neutral-400">
+              <span className="hidden sm:inline-block font-mono text-[11px] tracking-wider text-neutral-400">
                 • 1/250s • f/2.8 • ISO 400 • {activeTheme.temp.toUpperCase()}
               </span>
             </div>
 
             {/* Top Right: Dehradun Coordinates */}
-            <div className="font-mono text-sm tracking-wider text-neutral-400 text-right">
+            <div className="font-mono text-[11px] tracking-wider text-neutral-400 text-right">
               <span>30.3165° N, 78.0322° E</span>
               <span className="hidden sm:inline ml-2 font-semibold" style={{ color: activeTheme.color }}>
                 DEHRADUN, UK
@@ -145,7 +145,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onBookClick }) => {
               <p className="text-base sm:text-xl text-white font-medium tracking-tight">
                 &ldquo;Where Your Imagination is our innovation.&rdquo;
               </p>
-              <p className="text-base text-neutral-300 max-w-xl font-normal leading-relaxed mt-1">
+              <p className="text-xs sm:text-sm text-neutral-400 max-w-xl font-normal leading-relaxed mt-1">
                 {siteContent.hero.approvedStatement}
               </p>
             </motion.div>
@@ -193,7 +193,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onBookClick }) => {
                     key={idx}
                     type="button"
                     onClick={() => openConciergeWithPrompt(chip.q)}
-                    className="text-sm px-2.5 py-1 rounded-md bg-white/[0.04] hover:bg-white/[0.08] text-neutral-300 border border-white/10 hover:border-white/20 transition-all font-medium"
+                    className="text-[11px] px-2.5 py-1 rounded-md bg-white/[0.04] hover:bg-white/[0.08] text-neutral-300 border border-white/10 hover:border-white/20 transition-all font-medium"
                   >
                     {chip.label}
                   </button>
@@ -208,7 +208,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onBookClick }) => {
               transition={{ duration: 0.8, delay: 0.55 }}
               className="mt-6 flex flex-wrap items-center justify-center gap-2 max-w-2xl"
             >
-              <span className="text-sm font-mono uppercase tracking-wider text-neutral-500 mr-1 hidden sm:inline">
+              <span className="text-[10px] font-mono uppercase tracking-wider text-neutral-500 mr-1 hidden sm:inline">
                 3D View:
               </span>
               {focusOptions.map((opt) => {
@@ -251,7 +251,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onBookClick }) => {
                 }}
               >
                 <span>BOOK THE STUDIO</span>
-                <span className="text-sm font-mono text-black/75">(+91 8279720490)</span>
+                <span className="text-[10px] font-mono text-black/75">(+91 8279720490)</span>
               </a>
 
               <a
@@ -269,13 +269,13 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onBookClick }) => {
             className="flex items-center justify-between w-full pb-2 transition-opacity duration-200"
             style={{ opacity: Math.max(0, 1 - scrollProgress * 3) }}
           >
-            <div className="text-sm font-mono text-neutral-500 tracking-wider">
+            <div className="text-[11px] font-mono text-neutral-500 tracking-wider">
               SHUTTER DOL-IN ACTIVE
             </div>
 
             {/* Scroll Indicator */}
             <a href="#services" className="flex flex-col items-center gap-1 group cursor-pointer">
-              <span className="text-sm font-mono tracking-widest text-neutral-400 group-hover:text-white transition-colors">
+              <span className="text-[10px] font-mono tracking-widest text-neutral-400 group-hover:text-white transition-colors">
                 SCROLL TO EXPLORE
               </span>
               <motion.div
@@ -288,7 +288,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onBookClick }) => {
               </motion.div>
             </a>
 
-            <div className="text-sm font-mono text-neutral-500 tracking-wider text-right">
+            <div className="text-[11px] font-mono text-neutral-500 tracking-wider text-right">
               VOLUMETRIC OPTICAL RIG
             </div>
           </div>

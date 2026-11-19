@@ -45,7 +45,7 @@ export const ContactSection: React.FC = () => {
                   <MapPin className="w-5 h-5" />
                 </div>
                 <div>
-                  <span className="text-sm font-mono uppercase tracking-widest text-neutral-400 block mb-1">
+                  <span className="text-[10px] font-mono uppercase tracking-widest text-neutral-400 block mb-1">
                     Studio Location
                   </span>
                   <p className="text-sm font-medium text-white leading-relaxed">
@@ -72,19 +72,19 @@ export const ContactSection: React.FC = () => {
                   <Phone className="w-5 h-5" />
                 </div>
                 <div className="space-y-1">
-                  <span className="text-xs font-mono uppercase tracking-widest text-neutral-400 block mb-1">
+                  <span className="text-[10px] font-mono uppercase tracking-widest text-neutral-400 block mb-1">
                     Direct Production Lines
                   </span>
                   <div>
                     <a
                       href={`tel:${siteContent.contact.primaryPhoneTel}`}
-                      className="text-base font-mono font-bold text-white hover:underline block"
+                      className="text-sm font-mono font-bold text-white hover:underline block"
                     >
                       {siteContent.contact.primaryPhone} (Primary Desk)
                     </a>
                     <a
                       href={`tel:${siteContent.contact.secondaryPhoneTel}`}
-                      className="text-sm font-mono text-neutral-300 hover:text-white block mt-0.5"
+                      className="text-xs font-mono text-neutral-400 hover:text-white block mt-0.5"
                     >
                       {siteContent.contact.secondaryPhone} (Secondary Desk)
                     </a>
@@ -103,7 +103,7 @@ export const ContactSection: React.FC = () => {
                   <Mail className="w-4 h-4" />
                 </div>
                 <div className="overflow-hidden">
-                  <span className="text-sm font-mono uppercase text-neutral-500 block">Email Desk</span>
+                  <span className="text-[10px] font-mono uppercase text-neutral-500 block">Email Desk</span>
                   <span className="text-xs font-mono text-neutral-200 truncate block group-hover:text-white">
                     {siteContent.contact.email}
                   </span>
@@ -120,7 +120,7 @@ export const ContactSection: React.FC = () => {
                   <MessageSquare className="w-4 h-4" />
                 </div>
                 <div>
-                  <span className="text-sm font-mono uppercase text-neutral-500 block">WhatsApp</span>
+                  <span className="text-[10px] font-mono uppercase text-neutral-500 block">WhatsApp</span>
                   <span className="text-xs font-mono text-[#25D366] font-semibold flex items-center gap-1">
                     <span>Chat Live</span>
                     <ArrowUpRight className="w-3 h-3" />
@@ -131,7 +131,7 @@ export const ContactSection: React.FC = () => {
 
             {/* Verified Social Channels */}
             <div className="p-5 rounded-xl bg-[#0E0F16] border border-white/[0.08]">
-              <span className="text-sm font-mono uppercase tracking-widest text-neutral-500 block mb-3">
+              <span className="text-[10px] font-mono uppercase tracking-widest text-neutral-500 block mb-3">
                 Official Channels
               </span>
               <div className="flex flex-wrap items-center gap-2">
@@ -201,7 +201,7 @@ export const ContactSection: React.FC = () => {
                 <span className="w-2 h-2 rounded-full" style={{ backgroundColor: activeTheme.color }} />
                 <div>
                   <div className="font-bold font-heading text-sm">Dream Byte Studio</div>
-                  <div className="text-sm text-neutral-400">Above Bank of India, Sahastradhara Road</div>
+                  <div className="text-[10px] text-neutral-400">Above Bank of India, Sahastradhara Road</div>
                 </div>
               </div>
             </div>

@@ -72,14 +72,14 @@ export const StudioSection: React.FC = () => {
                 <Navigation className="w-4 h-4" />
                 <span>Sahastradhara Road • Dehradun</span>
               </div>
-              <h3 className="font-heading text-2xl font-bold text-white mb-2">
+              <h3 className="font-heading text-xl font-bold text-white mb-2">
                 Visit Us in Person for a Studio Walkthrough
               </h3>
-              <p className="text-base text-neutral-300 leading-relaxed font-normal mb-4">
+              <p className="text-sm text-neutral-300 leading-relaxed font-normal mb-4">
                 {siteContent.theStudio.note}
               </p>
-              <div className="flex items-center gap-2 text-sm font-mono text-neutral-400">
-                <span className="w-2 h-2 rounded-full" style={{ backgroundColor: activeTheme.color }} />
+              <div className="flex items-center gap-2 text-xs font-mono text-neutral-400">
+                <span className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: activeTheme.color }} />
                 <span>Call ahead scheduling recommended: +91 8279720490</span>
               </div>
             </div>
@@ -89,11 +89,11 @@ export const StudioSection: React.FC = () => {
               <div className="flex items-start gap-3 mb-4 pb-4 border-b border-white/[0.08]">
                 <MapPin className="w-5 h-5 shrink-0 mt-0.5" style={{ color: activeTheme.color }} />
                 <div>
-                  <h4 className="text-base font-bold text-white mb-1">Studio Address</h4>
-                  <p className="text-base text-neutral-300 leading-relaxed">
+                  <h4 className="text-sm font-bold text-white mb-1">Studio Address</h4>
+                  <p className="text-xs text-neutral-300 leading-relaxed">
                     {siteContent.theStudio.addressBlock}
                   </p>
-                  <p className="text-xs font-mono text-neutral-400 mt-1">
+                  <p className="text-[11px] font-mono text-neutral-500 mt-1">
                     GPS: 30.3164945° N, 78.0321918° E
                   </p>
                 </div>
@@ -103,11 +103,11 @@ export const StudioSection: React.FC = () => {
                 href="https://maps.google.com/?q=30.3164945,78.0321918"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 text-base font-bold font-heading hover:underline"
+                className="inline-flex items-center gap-1.5 text-xs font-bold font-heading hover:underline"
                 style={{ color: activeTheme.color }}
               >
                 <span>Open in Google Maps</span>
-                <ArrowUpRight className="w-4 h-4" />
+                <ArrowUpRight className="w-3.5 h-3.5" />
               </a>
             </div>
 
@@ -119,7 +119,7 @@ export const StudioSection: React.FC = () => {
                     <CheckCircle2 className="w-3.5 h-3.5 flex-shrink-0" style={{ color: activeTheme.color }} />
                     <h5 className="font-heading text-xs font-bold text-white">{p.title}</h5>
                   </div>
-                  <p className="text-sm text-neutral-400 leading-relaxed font-normal">{p.desc}</p>
+                  <p className="text-[11px] text-neutral-400 leading-relaxed font-normal">{p.desc}</p>
                 </div>
               ))}
             </div>
