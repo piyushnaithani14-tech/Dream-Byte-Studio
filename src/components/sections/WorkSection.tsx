@@ -188,17 +188,17 @@ export const WorkSection: React.FC = () => {
 
                 <div className="p-4 bg-[#0E0F16] border-t border-white/[0.06]">
                   <div className="flex items-center justify-between mb-1">
-                    <span className="font-mono text-[10px] uppercase tracking-wider font-semibold" style={{ color: activeTheme.color }}>
+                    <span className="font-mono text-xs uppercase tracking-wider font-semibold" style={{ color: activeTheme.color }}>
                       {photo.category}
                     </span>
-                    <span className="text-[10px] font-mono text-neutral-500">
+                    <span className="text-xs font-mono text-neutral-400">
                       STILL 0{pIdx + 1}
                     </span>
                   </div>
-                  <h4 className="font-heading text-sm font-bold text-white mb-1 tracking-tight">
+                  <h4 className="font-heading text-base font-bold text-white mb-1 tracking-tight">
                     {photo.title}
                   </h4>
-                  <p className="text-xs text-neutral-400 leading-relaxed font-normal line-clamp-2">
+                  <p className="text-base text-neutral-300 leading-relaxed font-normal line-clamp-2">
                     {photo.caption}
                   </p>
                 </div>

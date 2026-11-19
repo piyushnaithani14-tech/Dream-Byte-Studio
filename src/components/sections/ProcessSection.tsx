@@ -85,7 +85,7 @@ export const ProcessSection: React.FC = () => {
                 </h3>
 
                 {/* Description */}
-                <p className="text-xs sm:text-sm text-neutral-300 leading-relaxed font-normal">
+                <p className="text-base text-neutral-300 leading-relaxed font-normal">
                   {step.description}
                 </p>
               </div>

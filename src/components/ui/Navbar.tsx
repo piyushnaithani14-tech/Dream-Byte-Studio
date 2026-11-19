@@ -75,7 +75,7 @@ export const Navbar: React.FC = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-xs font-medium uppercase tracking-[0.12em] text-neutral-300 hover:text-white transition-colors py-1 relative group"
+                className="text-base font-medium uppercase tracking-[0.1em] text-neutral-300 hover:text-white transition-colors py-1 relative group"
               >
                 <span>{link.name}</span>
                 <span

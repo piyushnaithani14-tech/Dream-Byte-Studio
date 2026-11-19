@@ -217,7 +217,7 @@ export const ByteBotModal: React.FC = () => {
               {messages.map((m) => (
                 <div key={m.id} className={`flex flex-col ${m.sender === "user" ? "items-end" : "items-start"}`}>
                   <div
-                    className={`max-w-[85%] sm:max-w-[80%] p-4 rounded-xl text-sm leading-relaxed ${
+                    className={`max-w-[85%] sm:max-w-[80%] p-4 rounded-xl text-base leading-relaxed ${
                       m.sender === "user"
                         ? "bg-white text-black font-medium"
                         : "bg-[#151722] text-neutral-200 border border-white/10"

@@ -145,7 +145,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onBookClick }) => {
               <p className="text-base sm:text-xl text-white font-medium tracking-tight">
                 &ldquo;Where Your Imagination is our innovation.&rdquo;
               </p>
-              <p className="text-xs sm:text-sm text-neutral-400 max-w-xl font-normal leading-relaxed mt-1">
+              <p className="text-base text-neutral-300 max-w-xl font-normal leading-relaxed mt-1">
                 {siteContent.hero.approvedStatement}
               </p>
             </motion.div>

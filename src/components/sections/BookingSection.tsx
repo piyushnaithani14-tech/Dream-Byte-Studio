@@ -160,7 +160,7 @@ export const BookingSection: React.FC = () => {
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       {/* Name */}
                       <div>
-                        <label className="block text-xs font-mono uppercase tracking-wider text-neutral-400 mb-1.5">
+                        <label className="block text-sm font-mono uppercase tracking-wider text-neutral-300 mb-1.5">
                           Full Name *
                         </label>
                         <input
@@ -169,13 +169,13 @@ export const BookingSection: React.FC = () => {
                           value={formData.name}
                           onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                           placeholder="Your name"
-                          className="w-full px-4 py-3 rounded-lg bg-[#141520] border border-white/10 text-sm text-white placeholder-neutral-500 focus:outline-none focus:border-white/30 transition-colors"
+                          className="w-full px-4 py-3 rounded-lg bg-[#141520] border border-white/10 text-base text-white placeholder-neutral-500 focus:outline-none focus:border-white/30 transition-colors"
                         />
                       </div>
 
                       {/* Phone */}
                       <div>
-                        <label className="block text-xs font-mono uppercase tracking-wider text-neutral-400 mb-1.5">
+                        <label className="block text-sm font-mono uppercase tracking-wider text-neutral-300 mb-1.5">
                           Phone / WhatsApp *
                         </label>
                         <input
@@ -184,7 +184,7 @@ export const BookingSection: React.FC = () => {
                           value={formData.phone}
                           onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                           placeholder="+91 Phone number"
-                          className="w-full px-4 py-3 rounded-lg bg-[#141520] border border-white/10 text-sm text-white placeholder-neutral-500 focus:outline-none focus:border-white/30 transition-colors"
+                          className="w-full px-4 py-3 rounded-lg bg-[#141520] border border-white/10 text-base text-white placeholder-neutral-500 focus:outline-none focus:border-white/30 transition-colors"
                         />
                       </div>
                     </div>
@@ -192,13 +192,13 @@ export const BookingSection: React.FC = () => {
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       {/* Service Dropdown */}
                       <div>
-                        <label className="block text-xs font-mono uppercase tracking-wider text-neutral-400 mb-1.5">
+                        <label className="block text-sm font-mono uppercase tracking-wider text-neutral-300 mb-1.5">
                           Production Service *
                         </label>
                         <select
                           value={formData.service}
                           onChange={(e) => setFormData({ ...formData, service: e.target.value })}
-                          className="w-full px-4 py-3 rounded-lg bg-[#141520] border border-white/10 text-sm text-white focus:outline-none focus:border-white/30 transition-colors cursor-pointer"
+                          className="w-full px-4 py-3 rounded-lg bg-[#141520] border border-white/10 text-base text-white focus:outline-none focus:border-white/30 transition-colors cursor-pointer"
                         >
                           <option value="Photo Shoots">Photo Shoots (In-House Gear)</option>
                           <option value="Videography">Videography (4K Cinema Production)</option>
@@ -210,21 +210,21 @@ export const BookingSection: React.FC = () => {
 
                       {/* Preferred Date */}
                       <div>
-                        <label className="block text-xs font-mono uppercase tracking-wider text-neutral-400 mb-1.5">
+                        <label className="block text-sm font-mono uppercase tracking-wider text-neutral-300 mb-1.5">
                           Preferred Date
                         </label>
                         <input
                           type="date"
                           value={formData.date}
                           onChange={(e) => setFormData({ ...formData, date: e.target.value })}
-                          className="w-full px-4 py-3 rounded-lg bg-[#141520] border border-white/10 text-sm text-white focus:outline-none focus:border-white/30 transition-colors"
+                          className="w-full px-4 py-3 rounded-lg bg-[#141520] border border-white/10 text-base text-white focus:outline-none focus:border-white/30 transition-colors"
                         />
                       </div>
                     </div>
 
                     {/* Message / Scope */}
                     <div>
-                      <label className="block text-xs font-mono uppercase tracking-wider text-neutral-400 mb-1.5">
+                      <label className="block text-sm font-mono uppercase tracking-wider text-neutral-300 mb-1.5">
                         Project Scope & Equipment Specifications
                       </label>
                       <textarea
@@ -232,7 +232,7 @@ export const BookingSection: React.FC = () => {
                         value={formData.message}
                         onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                         placeholder="Detail your production concept, lighting requirements, or desired timeline..."
-                        className="w-full px-4 py-3 rounded-lg bg-[#141520] border border-white/10 text-sm text-white placeholder-neutral-500 focus:outline-none focus:border-white/30 transition-colors resize-none"
+                        className="w-full px-4 py-3 rounded-lg bg-[#141520] border border-white/10 text-base text-white placeholder-neutral-500 focus:outline-none focus:border-white/30 transition-colors resize-none"
                       />
                     </div>
 
@@ -240,7 +240,7 @@ export const BookingSection: React.FC = () => {
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className="w-full py-3.5 rounded-lg font-heading font-semibold text-xs uppercase tracking-wider text-black shadow-lg hover:opacity-95 transition-all flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50"
+                      className="w-full py-4 rounded-lg font-heading font-semibold text-base uppercase tracking-wider text-black shadow-lg hover:opacity-95 transition-all flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50"
                       style={{
                         backgroundColor: activeTheme.color,
                         boxShadow: `0 0 25px ${activeTheme.color}35`,

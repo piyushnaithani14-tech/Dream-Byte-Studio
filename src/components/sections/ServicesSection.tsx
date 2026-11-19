@@ -114,18 +114,18 @@ const TiltCard: React.FC<TiltCardProps> = ({ service, index }) => {
           <h3 className="font-heading text-xl sm:text-2xl font-bold text-white mb-1 tracking-tight">
             {service.title}
           </h3>
-          <p className="text-xs font-mono text-neutral-400 mb-3 italic">
+          <p className="text-sm font-mono text-neutral-400 mb-3 italic">
             &ldquo;{service.tagline}&rdquo;
           </p>
-          <p className="text-xs sm:text-sm text-neutral-300 leading-relaxed font-normal mb-6">
+          <p className="text-base text-neutral-300 leading-relaxed font-normal mb-6">
             {service.description}
           </p>
 
           {/* Feature Bullets */}
-          <div className="space-y-2 mb-6">
+          <div className="space-y-2.5 mb-6">
             {service.features.map((feat, fIdx) => (
-              <div key={fIdx} className="flex items-start gap-2 text-xs text-neutral-400 font-normal">
-                <CheckCircle2 className="w-3.5 h-3.5 mt-0.5 flex-shrink-0" style={{ color: activeTheme.color }} />
+              <div key={fIdx} className="flex items-start gap-2.5 text-base text-neutral-300 font-normal">
+                <CheckCircle2 className="w-4 h-4 mt-1 flex-shrink-0" style={{ color: activeTheme.color }} />
                 <span>{feat}</span>
               </div>
             ))}

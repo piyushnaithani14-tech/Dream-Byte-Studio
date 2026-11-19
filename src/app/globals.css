@@ -23,6 +23,7 @@ html {
   background-color: #08090D;
   color: #FFFFFF;
   scroll-behavior: smooth;
+  font-size: 16px;
 }
 
 body {
@@ -30,8 +31,19 @@ body {
   color: #E2E8F0;
   overflow-x: hidden;
   font-family: 'Bauhaus 93', 'Bauhaus', cursive, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+p, li, input, textarea, button, select {
+  font-size: 16px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 ::selection {

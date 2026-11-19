@@ -72,19 +72,19 @@ export const ContactSection: React.FC = () => {
                   <Phone className="w-5 h-5" />
                 </div>
                 <div className="space-y-1">
-                  <span className="text-[10px] font-mono uppercase tracking-widest text-neutral-400 block mb-1">
+                  <span className="text-xs font-mono uppercase tracking-widest text-neutral-400 block mb-1">
                     Direct Production Lines
                   </span>
                   <div>
                     <a
                       href={`tel:${siteContent.contact.primaryPhoneTel}`}
-                      className="text-sm font-mono font-bold text-white hover:underline block"
+                      className="text-base font-mono font-bold text-white hover:underline block"
                     >
                       {siteContent.contact.primaryPhone} (Primary Desk)
                     </a>
                     <a
                       href={`tel:${siteContent.contact.secondaryPhoneTel}`}
-                      className="text-xs font-mono text-neutral-400 hover:text-white block mt-0.5"
+                      className="text-sm font-mono text-neutral-300 hover:text-white block mt-0.5"
                     >
                       {siteContent.contact.secondaryPhone} (Secondary Desk)
                     </a>
