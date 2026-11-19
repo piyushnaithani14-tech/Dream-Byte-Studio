@@ -34,9 +34,9 @@ module.exports = {
         },
       },
       fontFamily: {
-        sans: ['"Bauhaus 93"', '"Bauhaus"', "cursive", "sans-serif"],
-        heading: ['"Bauhaus 93"', '"Bauhaus"', "cursive", "sans-serif"],
-        display: ['"Bauhaus 93"', '"Bauhaus"', "cursive", "sans-serif"],
+        sans: ['"Edwardian Script ITC"', '"Edwardian Script"', "cursive", "sans-serif"],
+        heading: ['"Edwardian Script ITC"', '"Edwardian Script"', "cursive", "sans-serif"],
+        display: ['"Edwardian Script ITC"', '"Edwardian Script"', "cursive", "sans-serif"],
         mono: ['"JetBrains Mono"', "monospace"],
       },
       fontSize: {

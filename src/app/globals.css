@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap');
 
 @font-face {
-  font-family: 'Bauhaus 93';
-  src: local('Bauhaus 93'), url('/assets/fonts/BAUHS93.TTF') format('truetype');
+  font-family: 'Edwardian Script ITC';
+  src: local('Edwardian Script ITC'), local('Edwardian Script'), url('/assets/fonts/ITCEDSCR.TTF') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -30,7 +30,7 @@ body {
   background-color: #08090D;
   color: #E2E8F0;
   overflow-x: hidden;
-  font-family: 'Bauhaus 93', 'Bauhaus', cursive, sans-serif;
+  font-family: 'Edwardian Script ITC', 'Edwardian Script', cursive, sans-serif;
   font-size: 16px;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -51,9 +51,9 @@ p {
   color: #000000;
 }
 
-/* Bauhaus 93 Typography Scale */
+/* Edwardian Script ITC Typography Scale */
 h1, h2, h3, h4, .font-heading {
-  font-family: 'Bauhaus 93', 'Bauhaus', cursive, sans-serif;
+  font-family: 'Edwardian Script ITC', 'Edwardian Script', cursive, sans-serif;
   letter-spacing: 0.02em;
   font-weight: normal;
 }
