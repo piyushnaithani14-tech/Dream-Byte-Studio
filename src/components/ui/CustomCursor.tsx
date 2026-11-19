@@ -112,7 +112,7 @@ export const CustomCursor: React.FC = () => {
       {/* Floating text prompt if provided (e.g. "DRAG" or "VIEW") */}
       {cursorText && (
         <motion.div
-          className="absolute left-0 top-0 ml-6 mt-4 px-2 py-0.5 bg-[#07070A]/90 border border-[#FFDB59]/40 rounded text-[10px] font-mono tracking-wider text-[#FFDB59] uppercase pointer-events-none"
+          className="absolute left-0 top-0 ml-6 mt-4 px-2 py-0.5 bg-[#07070A]/90 border border-[#FFDB59]/40 rounded text-sm font-mono tracking-wider text-[#FFDB59] uppercase pointer-events-none"
           style={{
             x: smoothX,
             y: smoothY,

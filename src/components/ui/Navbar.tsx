@@ -58,12 +58,12 @@ export const Navbar: React.FC = () => {
             </div>
             <div className="flex flex-col">
               <div className="flex items-center gap-2">
-                <span className="font-heading font-extrabold text-sm sm:text-base text-white tracking-wide">
+                <span className="font-heading font-extrabold text-base sm:text-lg text-white tracking-wide">
                   DREAM BYTE STUDIO
                 </span>
-                <span className="hidden sm:inline-block w-1.5 h-1.5 rounded-full bg-emerald-400" title="Studio Active" />
+                <span className="hidden sm:inline-block w-2 h-2 rounded-full bg-emerald-400" title="Studio Active" />
               </div>
-              <span className="text-[10px] font-mono tracking-[0.16em] text-neutral-400 uppercase">
+              <span className="text-sm font-mono tracking-[0.16em] text-neutral-400 uppercase">
                 Dehradun • Photo • Video • Podcast
               </span>
             </div>
@@ -92,12 +92,12 @@ export const Navbar: React.FC = () => {
             <div className="relative">
               <button
                 onClick={() => setThemeDropdownOpen(!themeDropdownOpen)}
-                className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-white/[0.04] hover:bg-white/[0.08] border border-white/10 text-xs font-mono text-neutral-300 transition-colors"
+                className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-white/[0.04] hover:bg-white/[0.08] border border-white/10 text-sm font-mono text-neutral-300 transition-colors"
                 title="Switch Studio Lighting Profile"
               >
-                <span className="w-2 h-2 rounded-full" style={{ backgroundColor: activeTheme.color }} />
-                <span className="text-[11px]">{activeTheme.name}</span>
-                <ChevronDown className={`w-3 h-3 text-neutral-400 transition-transform ${themeDropdownOpen ? "rotate-180" : ""}`} />
+                <span className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: activeTheme.color }} />
+                <span className="text-sm">{activeTheme.name}</span>
+                <ChevronDown className={`w-3.5 h-3.5 text-neutral-400 transition-transform ${themeDropdownOpen ? "rotate-180" : ""}`} />
               </button>
 
               <AnimatePresence>
@@ -108,7 +108,7 @@ export const Navbar: React.FC = () => {
                     exit={{ opacity: 0, y: 6 }}
                     className="absolute top-full right-0 mt-2 w-56 bg-[#0E0F16] border border-white/10 rounded-xl shadow-2xl py-2 z-50 backdrop-blur-xl"
                   >
-                    <div className="px-3 py-1 text-[10px] font-mono text-neutral-500 uppercase tracking-wider">
+                    <div className="px-3 py-1 text-sm font-mono text-neutral-400 uppercase tracking-wider">
                       Studio Lighting Profiles
                     </div>
                     {LIGHTING_THEMES.map((theme) => (
@@ -128,7 +128,7 @@ export const Navbar: React.FC = () => {
                           <span className="w-2 h-2 rounded-full" style={{ backgroundColor: theme.color }} />
                           <span>{theme.name}</span>
                         </div>
-                        <span className="text-[10px] font-mono text-neutral-500">{theme.badge}</span>
+                        <span className="text-sm font-mono text-neutral-400">{theme.badge}</span>
                       </button>
                     ))}
                   </motion.div>

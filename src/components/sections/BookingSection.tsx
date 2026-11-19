@@ -96,7 +96,7 @@ export const BookingSection: React.FC = () => {
                     <Phone className="w-4 h-4 text-black" />
                   </div>
                   <div>
-                    <div className="text-[10px] font-mono text-neutral-400 uppercase tracking-wider">Direct Desk Line</div>
+                    <div className="text-sm font-mono text-neutral-400 uppercase tracking-wider">Direct Desk Line</div>
                     <div className="text-sm font-mono font-bold text-white">{siteContent.contact.primaryPhone}</div>
                   </div>
                 </a>
@@ -111,7 +111,7 @@ export const BookingSection: React.FC = () => {
                     <MessageSquare className="w-4 h-4 text-white" />
                   </div>
                   <div>
-                    <div className="text-[10px] font-mono text-neutral-400 uppercase tracking-wider">Instant WhatsApp</div>
+                    <div className="text-sm font-mono text-neutral-400 uppercase tracking-wider">Instant WhatsApp</div>
                     <div className="text-sm font-mono font-bold text-white">+91 8279720490</div>
                   </div>
                 </a>

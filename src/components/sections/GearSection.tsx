@@ -84,7 +84,7 @@ export const GearSection: React.FC = () => {
                   {/* Card Header with Icon */}
                   <div className="flex items-center justify-between mb-4">
                     <span
-                      className="font-mono text-[10px] uppercase tracking-wider px-2.5 py-1 rounded border font-medium"
+                      className="font-mono text-sm uppercase tracking-wider px-2.5 py-1 rounded border font-medium"
                       style={{
                         color: activeTheme.color,
                         borderColor: `${activeTheme.color}35`,

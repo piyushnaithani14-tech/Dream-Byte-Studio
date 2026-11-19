@@ -98,7 +98,7 @@ const TiltCard: React.FC<TiltCardProps> = ({ service, index }) => {
           {/* Top Domain Badge & Icon */}
           <div className="flex items-center justify-between mb-5">
             <span
-              className="font-mono text-[10px] uppercase tracking-wider px-2.5 py-1 rounded border font-medium"
+              className="font-mono text-sm uppercase tracking-wider px-2.5 py-1 rounded border font-medium"
               style={{
                 color: activeTheme.color,
                 borderColor: `${activeTheme.color}35`,
@@ -134,7 +134,7 @@ const TiltCard: React.FC<TiltCardProps> = ({ service, index }) => {
 
         {/* Card Footer: Highlight + Action Buttons */}
         <div className="pt-4 border-t border-white/[0.08] space-y-3">
-          <div className="flex items-center gap-2 text-[11px] font-mono text-neutral-400">
+          <div className="flex items-center gap-2 text-sm font-mono text-neutral-400">
             <span className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: activeTheme.color }} />
             <span>{service.inHouseHighlight}</span>
           </div>

@@ -98,13 +98,13 @@ export const WorkSection: React.FC = () => {
                 />
 
                 {/* Shutter Telemetry Overlay */}
-                <div className="absolute top-3 left-3 px-2 py-0.5 rounded bg-black/75 backdrop-blur-md border border-white/10 text-[10px] font-mono text-white tracking-wider flex items-center gap-1.5">
+                <div className="absolute top-3 left-3 px-2 py-0.5 rounded bg-black/75 backdrop-blur-md border border-white/10 text-sm font-mono text-white tracking-wider flex items-center gap-1.5">
                   <span className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: activeTheme.color }} />
                   <span>REEL 0{index + 1}</span>
                 </div>
 
                 {/* Duration Tag */}
-                <div className="absolute top-3 right-3 px-2 py-0.5 rounded bg-black/75 backdrop-blur-md border border-white/10 text-[10px] font-mono text-neutral-300 flex items-center gap-1">
+                <div className="absolute top-3 right-3 px-2 py-0.5 rounded bg-black/75 backdrop-blur-md border border-white/10 text-sm font-mono text-neutral-300 flex items-center gap-1">
                   <Clock className="w-2.5 h-2.5" />
                   <span>{REEL_DURATIONS[index % REEL_DURATIONS.length]}</span>
                 </div>
@@ -127,7 +127,7 @@ export const WorkSection: React.FC = () => {
 
               {/* Card Meta Content */}
               <div className="p-5 bg-[#0E0F16] relative z-10 border-t border-white/[0.06]">
-                <span className="font-mono text-[10px] uppercase tracking-wider block mb-1 font-semibold" style={{ color: activeTheme.color }}>
+                <span className="font-mono text-sm uppercase tracking-wider block mb-1 font-semibold" style={{ color: activeTheme.color }}>
                   {reel.category}
                 </span>
                 <h3 className="text-base font-bold text-white mb-1 tracking-tight">
@@ -299,10 +299,10 @@ export const WorkSection: React.FC = () => {
               <div className="w-full mt-4 flex flex-col sm:flex-row sm:items-center justify-between px-2 gap-2">
                 <div>
                   <div className="flex items-center gap-2 mb-1">
-                    <span className="font-mono text-xs uppercase tracking-wider font-semibold" style={{ color: activeTheme.color }}>
+                    <span className="font-mono text-sm uppercase tracking-wider font-semibold" style={{ color: activeTheme.color }}>
                       {activePhoto.title === "Latest Still" ? "LATEST STILL" : activePhoto.category}
                     </span>
-                    <span className="text-[10px] font-mono text-neutral-400">• IN-HOUSE STAGE STILL</span>
+                    <span className="text-sm font-mono text-neutral-400">• IN-HOUSE STAGE STILL</span>
                   </div>
                   <h3 className="font-heading text-xl sm:text-2xl font-bold text-white tracking-tight">
                     {activePhoto.title}
@@ -312,7 +312,7 @@ export const WorkSection: React.FC = () => {
                   </p>
                 </div>
                 <div
-                  className="text-[11px] font-mono whitespace-nowrap bg-black/70 px-3 py-1.5 rounded-md border self-start sm:self-auto"
+                  className="text-sm font-mono whitespace-nowrap bg-black/70 px-3 py-1.5 rounded-md border self-start sm:self-auto"
                   style={{ color: activeTheme.color, borderColor: `${activeTheme.color}40` }}
                 >
                   DREAM BYTE STUDIO • SAHASTRADHARA RD

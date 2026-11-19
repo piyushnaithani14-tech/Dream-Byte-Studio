@@ -182,7 +182,7 @@ export const ByteBotModal: React.FC = () => {
                     <h3 className="font-heading font-bold text-white text-sm sm:text-base">
                       Studio Concierge
                     </h3>
-                    <span className="font-mono text-[10px] text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/20">
+                    <span className="font-mono text-sm text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/20">
                       Live Desk
                     </span>
                   </div>
@@ -254,7 +254,7 @@ export const ByteBotModal: React.FC = () => {
                       </div>
                     )}
                   </div>
-                  <span className="text-[10px] font-mono text-neutral-500 mt-1 px-1">{m.timestamp}</span>
+                  <span className="text-sm font-mono text-neutral-500 mt-1 px-1">{m.timestamp}</span>
                 </div>
               ))}
               <div ref={messagesEndRef} />

@@ -34,7 +34,7 @@ export const Footer: React.FC = () => {
                   <span className="font-heading font-extrabold text-base text-white tracking-wider">
                     DREAM BYTE STUDIO
                   </span>
-                  <span className="text-[10px] font-mono tracking-widest text-neutral-400 uppercase">
+                  <span className="text-sm font-mono tracking-widest text-neutral-400 uppercase">
                     Photo • Video • Podcast • Wedding
                   </span>
                 </div>

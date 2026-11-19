@@ -119,7 +119,7 @@ export const StudioSection: React.FC = () => {
                     <CheckCircle2 className="w-3.5 h-3.5 flex-shrink-0" style={{ color: activeTheme.color }} />
                     <h5 className="font-heading text-xs font-bold text-white">{p.title}</h5>
                   </div>
-                  <p className="text-[11px] text-neutral-400 leading-relaxed font-normal">{p.desc}</p>
+                  <p className="text-sm text-neutral-400 leading-relaxed font-normal">{p.desc}</p>
                 </div>
               ))}
             </div>
