@@ -34,9 +34,9 @@ module.exports = {
         },
       },
       fontFamily: {
-        sans: ['"Plus Jakarta Sans"', "system-ui", "-apple-system", "sans-serif"],
-        heading: ['"Plus Jakarta Sans"', "system-ui", "-apple-system", "sans-serif"],
-        display: ['"Plus Jakarta Sans"', "system-ui", "-apple-system", "sans-serif"],
+        sans: ['"Bauhaus 93"', '"Bauhaus"', "cursive", "sans-serif"],
+        heading: ['"Bauhaus 93"', '"Bauhaus"', "cursive", "sans-serif"],
+        display: ['"Bauhaus 93"', '"Bauhaus"', "cursive", "sans-serif"],
         mono: ['"JetBrains Mono"', "monospace"],
       },
       boxShadow: {
