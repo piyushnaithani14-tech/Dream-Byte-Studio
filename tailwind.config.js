@@ -34,9 +34,9 @@ module.exports = {
         },
       },
       fontFamily: {
-        sans: ['"Edwardian Script ITC"', '"Edwardian Script"', "cursive", "sans-serif"],
-        heading: ['"Edwardian Script ITC"', '"Edwardian Script"', "cursive", "sans-serif"],
-        display: ['"Edwardian Script ITC"', '"Edwardian Script"', "cursive", "sans-serif"],
+        sans: ['"Brush Script MT"', '"Brush Script"', "cursive", "sans-serif"],
+        heading: ['"Brush Script MT"', '"Brush Script"', "cursive", "sans-serif"],
+        display: ['"Brush Script MT"', '"Brush Script"', "cursive", "sans-serif"],
         mono: ['"JetBrains Mono"', "monospace"],
       },
       fontSize: {
